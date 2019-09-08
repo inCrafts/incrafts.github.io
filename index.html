@@ -2,47 +2,530 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="main.css">
-	<title>Content Slider</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/swiper.min.css">	
+	<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+	<title>InCrafts</title>
 </head>
 <body>
-	<header>
-		<div class="banner centered flex">
-			<h2 class="banner-heading">Creative Template
-				<span class="big">Welcome to MoGo</span>
-			</h2>
-			<hr class="banner-dash">
-			<a href="#" class="btn">Learn more</a>
-		</div>
-
-		<section class="content-slider">
-			<input id="slide1" type="radio" name="slide" checked>
-		</section>
-
-		<div class="slider centered">
-			<div class="slider-tabs flex">
-				<a href="#" class="slider-tabs__item">
-					<span class="slider-tabs__counter">01</span>
-					<span class="slider-tabs__description">Intro</span>	
-				</a>
-
-				<a href="#" class="slider-tabs__item">
-					<span class="slider-tabs__counter">01</span>
-					<span class="slider-tabs__description">Work</span>	
-				</a>
-
-				<a href="#" class="slider-tabs__item">
-					<span class="slider-tabs__counter">01</span>
-					<span class="slider-tabs__description">About</span>	
-				</a>
-
-				<a href="#" class="slider-tabs__item">
-					<span class="slider-tabs__counter">01</span>
-					<span class="slider-tabs__description">Contacts</span>	
-				</a>
-				
-			</div>
-		</div>
+	<header id="header">
+		<div class="header__content">
+			<h1 class="header__title">In Crafts</h1>
+			<a href="#elements" class="header__link">Start</a>
+		</div>		
 	</header>
+
+	<section class="elements" id="elements">
+		<h2 class="elements__category">Элементы</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Счетчик</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Отсчет секунд в обрптном порядке от 10.</p>
+							<a class="element__link" href="https://incrafts.github.io/counterDown/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Теннисный мяч</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Анимированный теннисный мяч, отскакивающий от поверхности.</p>
+							<a class="element__link" href="https://incrafts.github.io/tennisBall/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Водяная мельница</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Простая анимация в виде колеса водяной мельницы, вращающегося в пространстве.</p>
+							<a class="element__link" href="https://incrafts.github.io/waterMill/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Пульсар</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Анимированная пульсирующая точка, привлекающая внимание.</p>
+							<a class="element__link" href="https://incrafts.github.io/pulsarDot/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#header" class="to_top"></a>
+			<a href="#header" class="elements__btn prev">Назад</a>
+			<a href="#loaders" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="loaders" id="loaders">
+		<h2 class="elements__category">Анимация загрузки</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Rainbow</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Индикатор загрузки в виде анимированной радуги</p>
+							<a class="element__link" href="https://incrafts.github.io/rainbow/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Loading</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Яркий анимированный индикатор загрузки - Loading.</p>
+							<a href="https://incrafts.github.io/loading/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Квадраты<sup>2</sup></h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Составной индикатор загрузки в виде вращающихся квадратов.</p>
+							<a href="https://incrafts.github.io/loadingSquare/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Составной ромб</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Индикатор загрузки в виде собирающегося ромба.</p>
+							<a href="https://incrafts.github.io/rhombusLoader/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Кольцо загрузки</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Простое анимированное кольцо загрузки.</p>
+							<a href="https://incrafts.github.io/loaderRing/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>												
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#elements" class="elements__btn prev">Назад</a>
+			<a href="#effect_text" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="effect_text" id="effect_text">
+		<h2 class="elements__category">Эффектный текст</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Трескающиеся буквы</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Аниимированный текст, состоящий из треснувших букв.</p>
+							<a class="element__link" href="https://incrafts.github.io/textFracture/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Glowing</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Привлекающая внимание переливающаяся надпись.</p>
+							<a class="element__link" href="https://incrafts.github.io/sparklingText/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Привет, мир</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Надпись появляется из-за линии.</p>
+							<a class="element__link" href="https://incrafts.github.io/disclosingText/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Неоновый текст</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Текст с эффектом неоновой вывески.</p>
+							<a class="element__link"href="https://incrafts.github.io/neonText/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#loaders" class="elements__btn prev">Назад</a>
+			<a href="#cards" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="cards" id="cards">
+		<h2 class="elements__category">Карточки-элементы</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Карточки со шторкой</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Карточки с информацией, открывающейся за шторкой по наведению мыши.</p>
+							<a class="element__link" href="https://incrafts.github.io/showCards/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Трехслойные карточки</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Карточки в виде стопки бумаг с анимацией при наведении.</p>
+							<a href="https://incrafts.github.io/multilayerCards/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Угловые карточки</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Анимированные карточки с информацией. Ссылка для порсмотра появляется при наведении.</p>
+							<a href="https://incrafts.github.io/borderedCards/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#effect_text" class="elements__btn prev">Назад</a>
+			<a href="#effect_buttonst" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="effect_buttonst" id="effect_buttonst">
+		<h2 class="elements__category">Кнопки</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Вращающаяся кнопка</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Кнопка-ссылка вращается при наведении.</p>
+							<a href="https://incrafts.github.io/spinningButton/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">waveClick</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Кнопка с расширяющейся по клику рамкой.</p>
+							<a href="https://incrafts.github.io/waveClick/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Неоновая кнопка</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Светящаяся при наведении кнопка.</p>
+							<a href="https://incrafts.github.io/blueNeonButton/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Выпадающее меню</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Список, впадающий по клику на кнопке.</p>
+							<a class="element__link" href="https://incrafts.github.io/dropdownBtn/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Snake border</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Кнопка с анимированной границей.</p>
+							<a class="element__link" href="https://incrafts.github.io/snakeBorderButton/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#cards" class="elements__btn prev">Назад</a>
+			<a href="#animations" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="animations" id="animations">
+		<h2 class="elements__category">Анимация</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Линия с точкой</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Точка отскакивает от линии.</p>
+							<a class="element__link" href="https://incrafts.github.io/dotWithLine/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">ColorLoader</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Яркая анимация прямоугольников.</p>
+							<a href="https://incrafts.github.io/colorLoader/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#effect_buttonst" class="elements__btn prev">Назад</a>
+			<a href="#pages" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="pages" id="pages">
+		<h2 class="elements__category">Страницы</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Креативный лендинг</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Интересный кренативный лендинг с анимацией поывления и декоративными элементами.</p>
+							<a class="element__link" href="https://incrafts.github.io/creativeLanding/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Блог</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Страница блога с плавным скроллингом по датам.</p>
+							<a class="element__link" href="https://incrafts.github.io/scrollingBlog/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Smart moves</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Верстка шаблона на grid layout.</p>
+							<a class="element__link" href="https://incrafts.github.io/smartMoves/" target="_blanc">Смотреть</a>
+						</div>
+					</div>
+				</div>								
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#animations" class="elements__btn prev">Назад</a>
+			<a href="#navs" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="navs" id="navs">
+		<h2 class="elements__category">Меню</h2>
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Анимированная навигация</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Кнопка вращается рпи наведении</p>
+							<a href="https://incrafts.github.io/overlayNav/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Анимированный список</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Анимированная навигация, перекрывающая экран при клике по кнопке</p>
+							<a href="https://incrafts.github.io/menuList/" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Element four</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corrupti quo facere quia deleniti harum accusamus minus eveniet quas deserunt!</p>
+							<a href="#" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="element">
+						<div class="element__heading">
+							<h3 class="element__title">Element five</h3>
+						</div>
+
+						<div class="element__content">
+							<p class="element__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corrupti quo facere quia deleniti harum accusamus minus eveniet quas deserunt!</p>
+							<a href="#" target="_blanc" class="element__link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="buttons">
+			<a href="#navs" class="elements__btn prev">Назад</a>
+			<a href="#doit" class="elements__btn next">Дальше</a>			
+		</div>
+	</section>
+
+	<section class="doit" id="doit">
+		<h1 class="doit__heading">
+			<span class="doit__item">Do<hide>n't</hide></span>
+			<span class="doit__item"><hide>Qu</hide>it!</span>
+		</h1>
+
+		<div class="buttons">
+			<a href="#pages" class="elements__btn prev">Назад</a>
+			<a href="#header" class="elements__btn next">В начало</a>			
+		</div>	
+	</section>	
+
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
